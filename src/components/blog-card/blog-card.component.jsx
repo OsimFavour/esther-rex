@@ -5,7 +5,7 @@ import './blog-card.styles.scss'
 const BlogCard = ({ blogData }) => {
     const { content, date, imageUrl, placard, title } = blogData
     return (
-        <div className="col-lg-4">
+        <div className="col-lg-4 mt-3">
             <div className="service-item">
                 <div className="card text-center mb-5">
                     <div className="card-header p-0">                                   

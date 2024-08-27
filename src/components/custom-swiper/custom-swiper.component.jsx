@@ -1,6 +1,10 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+
 import 'swiper/css';
+import 'swiper/css/pagination';
+
+import './custom-swiper.styles.scss'
 
 const CustomSwiper = ({ children, ...props }) => {
     return (
@@ -9,6 +13,9 @@ const CustomSwiper = ({ children, ...props }) => {
             loop={true}
             grabCursor={true}
             spaceBetween={16}
+            pagination={{
+                clickable: true,
+            }}
             slidesPerView='auto'
             centeredSlides='auto'
             breakpoints={{
@@ -21,6 +28,7 @@ const CustomSwiper = ({ children, ...props }) => {
             {...props}
         >
             {children}
+            <div className="custom-swiper-pagination"></div> 
         </Swiper>
     );
 };

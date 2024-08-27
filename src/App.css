@@ -1721,13 +1721,13 @@ Book (Featured) Section
 }
 
 /* Swiper class */
-.swiper-button-prev::after,
+/* .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
-}
+} */
 
 
-.swiper-button-prev,
+/* .swiper-button-prev,
 .swiper-button-next {
   width: initial;
   height: initial;
@@ -1737,7 +1737,7 @@ Book (Featured) Section
   font-size: 1.5rem;
   color: hsl(230, 62%, 56%);
   transition: border .4s background-color .4s;
-}
+} */
 
 .featured__card button {
   width: 130px;

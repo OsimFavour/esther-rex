@@ -1,9 +1,7 @@
 import BookCard from "../book-card/book-card.component";
-import SwiperButton from "../swiper-button/swiper-button.component";
 import CustomSwiper, { SwiperSlide } from "../custom-swiper/custom-swiper.component";
 
 import BOOK_DATA from '../../book-data.json';
-
 
 const BookPreview = () => {
     return (
@@ -31,10 +29,10 @@ const BookPreview = () => {
                         
                     </div>
 
-                    <SwiperButton/>
                 </div>
                 
             </CustomSwiper>
+
         </>
     )
 }

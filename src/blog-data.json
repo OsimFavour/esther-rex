@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "placard": "#Bride",
+        "title": "The bride of Christ",
+        "imageUrl": "https://i.ibb.co/C50WqbP/blog-1.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 2,
+        "placard": "#Wisdom",
+        "title": "For wisdom & power",
+        "imageUrl": "https://i.ibb.co/r5KkmVR/blog-2.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 3,
+        "placard": "#Purpose",
+        "title": "How I found purpose",
+        "imageUrl": "https://i.ibb.co/Z1Tpk3r/blog-3.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 4,
+        "placard": "#Millions",
+        "title": "Here's how I made my first million",
+        "imageUrl": "https://i.ibb.co/rbShz0Z/blog-4.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 5,
+        "placard": "#Encounter",
+        "title": "How I encountered Jesus",
+        "imageUrl": "https://i.ibb.co/LRhG2DW/blog-5.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 6,
+        "placard": "#Salvation",
+        "title": "What salvation means to me",
+        "imageUrl": "https://i.ibb.co/Jj3sYjs/blog-6.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    },
+    {
+        "id": 7,
+        "placard": "#Developers",
+        "title": "Content strategy for developers",
+        "imageUrl": "https://i.ibb.co/f40KSBK/blog-7.jpg",
+        "date": "January 20 2019",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+    }
+]

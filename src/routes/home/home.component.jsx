@@ -1,4 +1,5 @@
 import Banner from "../../components/banner/banner.component"
+import BlogPreview from "../../components/blog-preview/blog-preview.component"
 import BookPreview from "../../components/book-preview/book-preview.component"
 
 const Home = () => {
@@ -6,6 +7,7 @@ const Home = () => {
         <>
             <Banner />
             <BookPreview />
+            <BlogPreview />
         </>
     )
 }

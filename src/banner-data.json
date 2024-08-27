@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "title": "Strength For Today",
+        "subTitle": "Daily Devotional for Revival",
+        "imageUrl": "https://i.ibb.co/TYgG4z0/banner-image-07.png",
+        "hoverTitle": "Fire & Wisdom",
+        "hoverContent": "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid."
+    },
+    {
+        "id": 2,
+        "title": "Children of Promise",
+        "subTitle": "Purpose, service & success",
+        "imageUrl": "https://i.ibb.co/2SjYWBY/banner-image-06.png",
+        "hoverTitle": "COPROCS",
+        "hoverContent": "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid."
+    },
+    {
+        "id": 3,
+        "title": "Mission Space",
+        "subTitle": "Child Evangelism & Parenting",
+        "imageUrl": "https://i.ibb.co/8xMXMVc/banner-image-03.jpg",
+        "hoverTitle": "Mission Space",
+        "hoverContent": "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid."
+    },
+    {
+        "id": 4,
+        "title": "School of Parenting",
+        "subTitle": "Learn how to train your child",
+        "imageUrl": "https://i.ibb.co/7ymbbY3/banner-right-image-05.png",
+        "hoverTitle": "Best Tips & Tricks",
+        "hoverContent": "Lorem ipsum dolor sit amet, conservisii ctetur adipiscing elit incid."
+    }
+]

@@ -1359,27 +1359,27 @@ Single Product Page
   margin-bottom: 10px;
 }
 
-.our-services .service-item {
-  /* padding: 30px; */
+/* .our-services .service-item {
+  padding: 30px;
   box-shadow: 0px 0px 15px rgba(0,0,0,0.10);
   text-align: center;
-}
+} */
 
-.our-services .service-item img {
+/* .our-services .service-item img {
   width: 100%;
   overflow: hidden;
-}
+} */
 
-.our-services .service-item h4 {
+/* .our-services .service-item h4 {
   font-size: 24px;
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 20px;
-}
+} */
 
-.our-services .service-item p {
+/* .our-services .service-item p {
   margin-bottom: 25px;
-}
+} */
 
 
 

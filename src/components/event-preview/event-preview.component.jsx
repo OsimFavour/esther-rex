@@ -1,7 +1,9 @@
+import './event-preview.styles.scss'
+
 const EventPreview = () => {
     return (
         <section className="section" id="explore">
-            <div className="container">
+            <div className="container event-container">
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="left-content">
@@ -42,7 +44,7 @@ const EventPreview = () => {
                                         <span>New Courses</span>
                                     </div>
                                 </div>
-                                <div className="col-lg-6">
+                                <div className="col-lg-6 mb-2">
                                     <div className="first-image">
                                         <img src='https://i.ibb.co/hDFhm97/home-img.jpg' height='255px' width='255px' alt=""/>
                                     </div>

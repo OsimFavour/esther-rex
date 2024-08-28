@@ -1,7 +1,5 @@
-import BlogCard from '../../components/blog-card/blog-card.component'
 import BlogBannerCard from '../../components/blog-banner-card/blog-banner-card'
-
-import BLOG_DATA from '../../blog-data.json'
+import BlogsPreview from '../../components/blogs-preview/blogs-preview.component'
 
 import './blog.styles.scss'
 
@@ -13,11 +11,7 @@ const Blog = () => {
                     <div class="page-content">
                         <BlogBannerCard />
                         <hr/>
-                        <div class="row"> 
-                            {BLOG_DATA.map((blogData) => <BlogCard key={blogData.id} blogData={blogData}/>)}                      
-                            
-                        </div>
-                        
+                        <BlogsPreview />
                         
                         <button class="btn btn-outline-dark btn-block my-4">Load More Posts</button>
                     </div>

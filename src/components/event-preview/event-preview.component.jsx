@@ -39,23 +39,23 @@ const EventPreview = () => {
                         <div className="right-content">
                             <div className="row">
                                 <div className="col-lg-6">
-                                    <div className="leather">
+                                    <div className="leather text-center">
                                         <h4>Tutorials</h4>
                                         <span>New Courses</span>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 mb-2">
-                                    <div className="first-image">
+                                    <div className="image-center">
                                         <img src='https://i.ibb.co/hDFhm97/home-img.jpg' height='255px' width='255px' alt=""/>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="second-image">
+                                    <div className="image-center">
                                         <img src='https://i.ibb.co/qg6qdrF/home-img-02.jpg' height='255px' width='255px' alt=""/>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">
-                                    <div className="types">
+                                    <div className="text-center">
                                         <h4>Best Selling Books</h4>
                                         <span>Over 304 Books</span>
                                     </div>

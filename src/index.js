@@ -5,12 +5,15 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter } from 'react-router-dom';
+import { MenuDropdownProvider } from './context/menu-dropdown.context';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <MenuDropdownProvider>
+        <App />
+      </MenuDropdownProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

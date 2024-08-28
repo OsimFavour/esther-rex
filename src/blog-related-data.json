@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "title": "Boys are good",
+        "imageUrl": "https://i.ibb.co/r5KkmVR/blog-2.jpg",
+        "badge": "#Placeat",
+        "no_of_comments": "34 Comments",
+        "date": "January 20 2019"
+    },
+    {
+        "id": 2,
+        "title": "Girls are better",
+        "imageUrl": "https://i.ibb.co/Z1Tpk3r/blog-3.jpg",
+        "badge": "#dolores",
+        "no_of_comments": "64 Comments",
+        "date": "January 19 2019"
+    },
+    {
+        "id": 1,
+        "title": "Parents are WAY better",
+        "imageUrl": "https://i.ibb.co/rbShz0Z/blog-4.jpg",
+        "badge": "#amet",
+        "no_of_comments": "93 comments",
+        "date": "January 19 2019"
+    }
+]

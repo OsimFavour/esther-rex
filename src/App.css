@@ -538,6 +538,12 @@ header
   .header-area .menu-trigger {
     display: block !important;
   }
+  .header-area .main-nav .nav.show {
+    display: block;
+  }
+  .header-area .submenu-list.open {
+  display: block;
+}
   .header-area .main-nav {
     overflow: hidden;
   }
@@ -1345,7 +1351,7 @@ Single Product Page
 
 .our-services {
   padding-top: 50px;
-  padding-bottom: 90px;
+  padding-bottom: 40px;
   border-top: 3px dotted #eee;
   border-bottom: 3px dotted #eee;
 }

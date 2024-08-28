@@ -21,6 +21,17 @@ const Header = () => {
         
     }
 
+    const closeMenu = () => {
+        setIsMenuOpen(false)
+        setSubMenuOpen(null)
+    }
+
+    const handleLinkClick = (e) => {
+        if (e.target.tagName === 'A') {
+            closeMenu();
+        }
+    }
+
     return (
         <header className="header-area header-sticky">
             <div className="container">
@@ -32,7 +43,7 @@ const Header = () => {
                                 esther rex
                                 
                             </Link>
-                            <ul className={`nav ${isMenuOpen ? 'show' : ''}`}>
+                            <ul className={`nav ${isMenuOpen ? 'show' : ''}`} onClick={handleLinkClick}>
                                 <li className="scroll-to-section"><Link to="/about" className="active">About</Link></li>
                                 <li className="scroll-to-section"><Link to="/blog">Blog</Link></li>
                                 <li className="scroll-to-section"><Link to="">Books</Link></li>

@@ -20,7 +20,7 @@ const BlogView = () => {
                 <div className="mt-5">
                     <h1 className="title">{blog.title}</h1>
                     <ol className="breadcrumb pb-0">
-                        <li className="breadcrumb-item"><Link to="/">Home</Link></li>
+                        <li className="breadcrumb-item text-dark"><Link to="/">Home</Link></li>
                         <li className="breadcrumb-item active" aria-current="page">{blog.title}</li>
                     </ol>
                 </div>

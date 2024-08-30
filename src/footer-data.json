@@ -40,10 +40,10 @@
       "section": "under-footer",
       "text": "Copyright © 2024 Esther Rex. All Rights Reserved.",
       "socials": [
-        { "icon": "fa-brands fa-facebook-f", "to": "" },
+        { "icon": "fa-brands fa-facebook-f", "to": "https://web.facebook.com/esther.rex.9" },
         { "icon": "fa-brands fa-x-twitter", "to": "" },
         { "icon": "fa-brands fa-linkedin-in", "to": "" },
-        { "icon": "fa-brands fa-instagram", "to": "" }
+        { "icon": "fa-brands fa-instagram", "to": "https://www.instagram.com/esther.rex/" }
       ]
     }
   ]

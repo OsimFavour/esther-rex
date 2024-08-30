@@ -20,7 +20,7 @@ const App = () => {
           <Route path='blog/:id' element={<BlogView />} />
           <Route path='contact' element={<Contact />} />
           <Route path='sign-in' element={<SignIn />} />
-          <Route path='sign-up' element={<SignUp />} />
+        <Route path='sign-up' element={<SignUp />} />
         </Route>
       </Routes>
     </>

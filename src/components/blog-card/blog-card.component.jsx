@@ -1,9 +1,13 @@
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom";
 
-import './blog-card.styles.scss'
+import './blog-card.styles.scss';
+import Button from "../button/button.component";
 
 const BlogCard = ({ blogData }) => {
-    const { content, date, imageUrl, placard, title } = blogData
+    const navigate = useNavigate();
+    const goToBlogViewHandler = () => navigate(`/blog/${blogData.id}`);
+
+    const { content, date, imageUrl, placard, title } = blogData;
     return (
         <div className="col-lg-4 mt-3">
             <div className="service-item">
@@ -21,7 +25,7 @@ const BlogCard = ({ blogData }) => {
                     </div>
                     
                     <div className="card-footer p-0 mb-4 text-center">
-                        <Link to={`/blog/${blogData.id}`} className="btn btn-outline-dark btn-sm">READ MORE</Link>
+                        <Button buttonType='inverted' onClick={goToBlogViewHandler}>READ MORE</Button>
                     </div>                  
                 </div>
             </div>

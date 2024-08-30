@@ -1,5 +1,6 @@
 import BlogBannerCard from '../../components/blog-banner-card/blog-banner-card'
 import BlogsPreview from '../../components/blogs-preview/blogs-preview.component'
+import Button from '../../components/button/button.component'
 
 import './blog.styles.scss'
 
@@ -12,8 +13,9 @@ const Blog = () => {
                         <BlogBannerCard />
                         <hr/>
                         <BlogsPreview />
+
+                        <Button buttonType='inverted'>Load More Posts</Button>
                         
-                        <button class="btn btn-outline-dark btn-block my-4">Load More Posts</button>
                     </div>
 
                 </div>

@@ -1,3 +1,5 @@
+import Button from "../button/button.component"
+
 const ContactForm = () => {
   return (
     <> 
@@ -30,7 +32,7 @@ const ContactForm = () => {
                                     </div>
                                     <div className="col-lg-12">
                                         <fieldset/>
-                                        <button type="submit" id="form-submit" className="main-dark-button"><i className="fa fa-paper-plane"></i></button>
+                                        <Button type='submit'><i className="fa fa-paper-plane"></i></Button>
                                     </div>
                                 </div>
                             </form>

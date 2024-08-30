@@ -1,3 +1,5 @@
+import Button from "../button/button.component"
+
 const BookCard = ({ bookData }) => {
     const { title, imageUrl, price } = bookData
 
@@ -11,10 +13,11 @@ const BookCard = ({ bookData }) => {
                 <span className="featured__price">$11.99</span>
             </div>
 
+            <Button>Buy Now</Button>
             
-            <button type="submit" id="form-submit" className="main-dark-button">
+            {/* <button type="submit" id="form-submit" className="main-dark-button">
                 Buy Now
-            </button>
+            </button> */}
         </article>
     )
 }

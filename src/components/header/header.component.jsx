@@ -5,7 +5,7 @@ import { MenuDropdownContext } from "../../context/menu-dropdown.context"
 
 const Header = () => {
 
-    const [subMenuOpen, setSubMenuOpen] = useState(null)
+    const [subMenuOpen, setSubMenuOpen] = useState(false)
 
     const { isMenuOpen, setIsMenuOpen } = useContext(MenuDropdownContext)
 
@@ -15,15 +15,14 @@ const Header = () => {
         
     }
 
-    const toggleSubMenu = (index) => {
-        setSubMenuOpen(subMenuOpen === index ? null : index)
-        console.log(`sub-menu ${subMenuOpen}`);
+    const toggleSubMenu = () => {
+        setSubMenuOpen(!subMenuOpen)
         
     }
 
     const closeMenu = () => {
         setIsMenuOpen(false)
-        setSubMenuOpen(null)
+        setSubMenuOpen(false)
     }
 
     const handleLinkClick = (e) => {
@@ -49,24 +48,16 @@ const Header = () => {
                                 <li className="scroll-to-section"><Link to="">Books</Link></li>
                                 <li className="scroll-to-section"><Link to="">Ministry</Link></li>
                                 <li className="scroll-to-section"><Link to="/contact">Contact</Link></li>
+                                <li className="scroll-to-section"><Link to="/sign-in">Login</Link></li>
                                 
                                 
-                                <li className="submenu">
-                                    <Link to="" onClick={() => toggleSubMenu(0)}><i className="fa-regular fa-user"></i></Link>
-                                    <ul className={`submenu-list ${subMenuOpen === 0 ? 'open' : ''}`}>
-                                        <li><Link to="/login">Sign In</Link></li>
-                                        <li><Link to="/signup">Sign Up</Link></li>
-                                        <li><Link to="#">Dashboard</Link></li>
-                                        <li><Link to="/logout">Logout</Link></li>
-                                    </ul>
-                                </li>
+                                
                             </ul>
                                 
                             <div className='menu-trigger' onClick={toggleIsMenuOpen}>
                                 <span>Menu</span>
                             </div>
 
-                            {/* {isMenuOpen && <MenuDropdown/>} */}
                         </nav>
                     </div>
                 </div>

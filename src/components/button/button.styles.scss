@@ -1,0 +1,56 @@
+.button-container {
+    width: 450px;
+    height: 44px;
+    display: block;
+    margin: auto;
+    text-align: center;
+    line-height: 44px;
+    box-shadow: none;
+    border: 1px solid transparent;
+    color: #fff;
+    background-color: #2a2a2a;
+    transition: all 0.3s;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #fff;
+        border: 1px solid #2a2a2a;
+        color: #2a2a2a;
+    }
+
+    .button-text {
+        font-size: 20px;
+    }
+
+    &.google-button {
+        box-shadow: 1px 1px 1px grey;
+        background: white;
+        border: thin solid #888;
+        border-radius: none;
+        color: #444;
+    
+        .icon {
+            background: transparent 5px 50% no-repeat;
+            display: inline-block;
+            vertical-align: middle;
+            width: 42px;
+            height: 38px;
+            margin-top: -10px;
+        }
+    
+        .button-text {
+            display: inline-block;
+            vertical-align: middle;
+            padding-left: 42px;
+            padding-right: 42px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
+}
+  
+  
+
+
+  

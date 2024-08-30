@@ -7,6 +7,8 @@ import Home from './routes/home/home.component';
 import Blog from './routes/blog/blog.component';
 import BlogView from './routes/blog-view/blog-view.component';
 import Contact from './routes/contact/contact.component';
+import SignIn from './routes/sign-in/sign-in.component';
+import SignUp from './routes/sign-up/sign-up.component';
 
 const App = () => {
   return (
@@ -17,6 +19,8 @@ const App = () => {
           <Route path='blog' element={<Blog />} />
           <Route path='blog/:id' element={<BlogView />} />
           <Route path='contact' element={<Contact />} />
+          <Route path='sign-in' element={<SignIn />} />
+          <Route path='sign-up' element={<SignUp />} />
         </Route>
       </Routes>
     </>

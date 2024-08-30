@@ -7,7 +7,7 @@ const BookPreview = () => {
     return (
         <>
             <div className="featured__header section-heading">
-                <h2 className='p-3'>
+                <h2 className='p-4'>
                     Featured Books
                 </h2>
             </div>

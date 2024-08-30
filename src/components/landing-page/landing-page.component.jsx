@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import landingPage from '../../assets/home-img.png'
 
 import './landing-page.styles.scss'
+import Button from "../button/button.component"
 
 const LandingPage = () => {
     return (
@@ -16,8 +17,9 @@ const LandingPage = () => {
                     <p>Join me and my dedicated team as we take over the city for Christ</p>
                 </div>
                 </div>
-                <div className="text-center" data-aos="zoom-out">
-                <Link to='' className="btn btn-dark btn-lg mt-3 border-0">Get Started</Link>
+                <div className="text-center mt-4" data-aos="zoom-out">
+                    <Button buttonType='landing'>Get Started</Button>
+                {/* <Link to='' className="btn btn-dark btn-lg mt-3 border-0">Get Started</Link> */}
                 {/* <button className="main-dark-button">Get Started</button> */}
                 </div>
 

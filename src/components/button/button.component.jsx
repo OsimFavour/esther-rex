@@ -2,7 +2,8 @@ import './button.styles.scss'
 
 export const BUTTON_TYPE_CLASSES = {
     google: "google-button",
-    inverted: "inverted"
+    inverted: "invert-button",
+    landing: "landing-button"
 }
 
 const Button = ({ children, buttonType, ...otherProps }) => {

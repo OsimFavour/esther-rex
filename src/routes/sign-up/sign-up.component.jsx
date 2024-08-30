@@ -51,10 +51,9 @@ const SignUp = () => {
         <section className='sign-up-container'>
             <div className="container py-5">
                 <div className="row d-flex align-items-center justify-content-center">
-                {/* <div className="col-md-8 col-lg-7 col-xl-6">
-                    <img src={AuthImg} className="img-fluid" alt="AuthImg"/>
-                </div> */}
+               
                 <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <h5 className='pb-3 text-center'>Welcome! please sign up here.</h5>
                     <form
                         action=''
                         onSubmit={formik.handleSubmit}

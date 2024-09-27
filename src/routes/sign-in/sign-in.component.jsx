@@ -47,7 +47,7 @@ const SignIn = () => {
                 </div> */}
                 <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
 
-                    <h5 className='pb-3 text-center'>Welcome! please enter your details.</h5>
+                    <div className='pb-3 text-center'>Welcome! please enter your details.</div>
                     <form 
                         action=''
                         onSubmit={formik.handleSubmit}

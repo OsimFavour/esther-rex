@@ -46,7 +46,7 @@ const BlogView = () => {
                             <div className="card-body border-top">
                                 <p className="my-3">{blog.content}</p>
 
-                                <p>{blog.content}</p>
+                                <p>{blog.content2}</p>
                             </div>
                             
                                          

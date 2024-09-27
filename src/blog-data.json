@@ -2,34 +2,38 @@
     {
         "id": 1,
         "placard": "#Bride",
-        "title": "The bride of Christ",
+        "title": "Progress requires focus.",
         "imageUrl": "https://i.ibb.co/C50WqbP/blog-1.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "Don't look backward or downward; instead, move forward with faith. Make the most of your strengths and opportunities today, and trust God to guide you through life's challenges. As night falls, rest in His promise: 'Behold, I will do a new thing...' (Isaiah 43:19)",
+        "content2": "Keep your eyes on Jesus, the author and finisher of your faith (Hebrews 12:2). He will lead you upward, to greater heights. Move forward, trust Him, and rise above."
     },
     {
         "id": 2,
         "placard": "#Wisdom",
-        "title": "For wisdom & power",
+        "title": "I'm a driving force",
         "imageUrl": "https://i.ibb.co/r5KkmVR/blog-2.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "As a new living creature you have the face of a lion, ox, eagle and man (a god) and the wings of an eagle; I see you moving forward and upward, in Jesus name. (Ezekiel 1:11-15; 2 Corinthians 5:17; Romans 8:14)",
+        "content2": "'Thus were their faces: and their wings were stretched UPWARD; ..And they went every one straight FORWARD: whither the SPIRIT was to go, they went; and they turned not when they went.' Ezekiel 1:11-12"
     },
     {
         "id": 3,
         "placard": "#Purpose",
-        "title": "How I found purpose",
+        "title": "Availability not Ability",
         "imageUrl": "https://i.ibb.co/Z1Tpk3r/blog-3.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "God is more interested in your availability than you abilities. All that the 'foolish' colt, that was released by the disciples, needed to do was to allow Jesus to sit on it. And she was clothed and given a 'red carpet' treatment, on her way from the village (obscurity)  to the city of Jerusalem.",
+        "content2": "Oh Lord as we answer your call and wait in you, cause our lives to be clothed with your presence and repositioned from glory to glory."
     },
     {
         "id": 4,
         "placard": "#Millions",
-        "title": "Here's how I made my first million",
+        "title": "Why you should be grateful",
         "imageUrl": "https://i.ibb.co/rbShz0Z/blog-4.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "It's not all poor, old and ugly looking women that are witches. The real witches or bewitched persons could be the ungrateful, ungodly and callous youths, that have dishonoured, neglected and exposed their parents to unnecessary suffering and stress (1 Samuel 15: 23; Ephesians 6:1-3).",
+        "content2": "For REBELLION is as the sin of WITCHCRAFT, and stubbornness is as iniquity and idolatry. '1 Samuel 15:23'"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "title": "How I encountered Jesus",
         "imageUrl": "https://i.ibb.co/LRhG2DW/blog-5.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "As a new living creature you have the face of a lion, ox, eagle and man (a god) and the wings of an eagle; I see you moving forward and upward, in Jesus name. (Ezekiel 1:11-15; 2 Corinthians 5:17; Romans 8:14)",
+        "content2":"'Thus were their faces: and their wings were stretched UPWARD; ..And they went every one straight FORWARD: whither the SPIRIT was to go, they went; and they turned not when they went.' Ezekiel 1:11-12"
     },
     {
         "id": 6,
@@ -45,14 +50,16 @@
         "title": "What salvation means to me",
         "imageUrl": "https://i.ibb.co/Jj3sYjs/blog-6.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "It's not all poor, old and ugly looking women that are witches. The real witches or bewitched persons could be the ungrateful, ungodly and callous youths, that have dishonoured, neglected and exposed their parents to unnecessary suffering and stress (1 Samuel 15: 23; Ephesians 6:1-3).",
+        "content2": "'Thus were their faces: and their wings were stretched UPWARD; ..And they went every one straight FORWARD: whither the SPIRIT was to go, they went; and they turned not when they went.' Ezekiel 1:11-12"
     },
     {
         "id": 7,
         "placard": "#Developers",
-        "title": "Content strategy for developers",
+        "title": "Availability not Ability",
         "imageUrl": "https://i.ibb.co/f40KSBK/blog-7.jpg",
         "date": "January 20 2019",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos saepe dolores et nostrum porro odit reprehenderit animi, est ratione fugit aspernatur ipsum. Nostrum placeat hic saepe voluptatum dicta ipsum beatae"
+        "content": "God is more interested in your availability than you abilities. All that the 'foolish' colt, that was released by the disciples, needed to do was to allow Jesus to sit on it. And she was clothed and given a 'red carpet' treatment, on her way from the village (obscurity)  to the city of Jerusalem.",
+        "content2": "Keep your eyes on Jesus, the author and finisher of your faith (Hebrews 12:2). He will lead you upward, to greater heights. Move forward, trust Him, and rise above."
     }
 ]

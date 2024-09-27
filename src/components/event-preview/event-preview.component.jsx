@@ -10,24 +10,35 @@ const EventPreview = () => {
                             <h2>Enrol for Esther's Women Academy here</h2>
                             <span>
             
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                exercitation.
+                            30 years ago, God said to me "Gather young ladies and train them to be balanced women in life and ministry"
+
                             </span>
                             
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                exercitation.
+                                It was a life changing and impactful 40 days. I feel very humbled to see that today, those teenagers and young ladies are mighty women of God doing exploits around the world.
                             </p>
 
                             <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                sed do eiusmod tempor incididunt ut labore et dolore 
-                                magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                exercitation.
+                                Exactly thirty years after, God has said it's time to rebrand and rebirth. Do it again!
+
+                                It's time to raise global women who are balanced in ministry, motherhood, marriage, money and, managing stress while at it.
+                            
+                            </p>
+
+                            <p>
+                                The best part? Blessed with a professional faculty, I'm not doing it alone.
+                                Introducing ESTHER'S WISDOM ACADEMY. Like the school that prepared Esther for the throne in the palace, God is ready to prepare you to impact your world.
+                            </p>
+
+                            <p>
+                                I'm so in awe of what God is set to do for women all over the world. 
+                                Fasten your seatbelts, and get on the train. 
+                                You have a mandate on your life that must be fulfilled. It's time to get to work!
+                                
+                            </p>
+
+                            <p>
+                                Join the community and get first hand information sent to your inbox.
                             </p>
                             
                             <div className="main-border-button">
@@ -40,13 +51,13 @@ const EventPreview = () => {
                             <div className="row">
                                 <div className="col-lg-6">
                                     <div className="leather text-center">
-                                        <h4>Tutorials</h4>
-                                        <span>New Courses</span>
+                                        <h4>Incoming Event</h4>
+                                        <span>EWA's Inauguration</span>
                                     </div>
                                 </div>
                                 <div className="col-lg-6 mb-2">
                                     <div className="image-center">
-                                        <img src='https://i.ibb.co/hDFhm97/home-img.jpg' height='255px' width='255px' alt=""/>
+                                        <img src='https://i.ibb.co/pbGL6JJ/hadassah.jpg' height='255px' width='255px' alt=""/>
                                     </div>
                                 </div>
                                 <div className="col-lg-6">

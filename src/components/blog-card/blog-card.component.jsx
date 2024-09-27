@@ -21,7 +21,7 @@ const BlogCard = ({ blogData }) => {
                     <div className="card-body px-0">
                         <h5 className="card-title mb-2">{title}</h5>    
                         <small className="small text-muted">{date}</small>
-                        <p className="my-2">{content}</p>
+                        <p className="my-2">{content.substr(0, 120)}...</p>
                     </div>
                     
                     <div className="card-footer p-0 mb-4 text-center">

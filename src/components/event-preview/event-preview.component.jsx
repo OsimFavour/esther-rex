@@ -7,7 +7,7 @@ const EventPreview = () => {
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="left-content">
-                            <h2>Enrol for Esther's Women Academy here</h2>
+                            <h2>Enrol for Esther's Wisdom Academy here</h2>
                             <span>
             
                             30 years ago, God said to me "Gather young ladies and train them to be balanced women in life and ministry"

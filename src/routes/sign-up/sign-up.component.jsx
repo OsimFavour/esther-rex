@@ -53,7 +53,7 @@ const SignUp = () => {
                 <div className="row d-flex align-items-center justify-content-center">
                
                 <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
-                    <h5 className='pb-3 text-center'>Welcome! please sign up here.</h5>
+                    <div className='pb-3 text-center'>Welcome! please sign up here.</div>
                     <form
                         action=''
                         onSubmit={formik.handleSubmit}

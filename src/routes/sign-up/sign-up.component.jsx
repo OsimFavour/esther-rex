@@ -11,6 +11,7 @@ import { authenticateWithGooglePopup } from '../../utils/firebase/firebase.utils
 
 
 import './sign-up.styles.scss'
+import { Link } from 'react-router-dom'
 
 
 const signUpSchema = yup.object({
@@ -135,6 +136,13 @@ const SignUp = () => {
                         <span className="icon"><GoogleIcon/></span>
                         <span className="button-text">Sign Up With Google</span>
                     </Button>
+
+                    <div className='mt-4'>
+                        <span>Already have an account? 
+                            <Link to="/sign-in" className='text-dark'> Sign in here</Link>
+                        </span>
+                        
+                    </div>
 
                     </form>
                 </div>

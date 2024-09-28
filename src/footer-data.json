@@ -3,37 +3,17 @@
       "section": "first-item",
       "title": "Esther Rex",
       "links": [
-        { "text": "Goshem, Parliamentary Extension, P.O 59301, Calabar", "to": "" },
-        { "text": "admin@estherrex.com", "to": "" },
+        { "text": "Goshen, Parliamentary Extension, P.O 59301, Calabar", "to": "" },
+        { "text": "estherrex.com", "to": "" },
         { "text": "010-020-0340", "to": "" }
-      ]
-    },
-    {
-      "section": "Books Categories",
-      "links": [
-        { "text": "Marriage", "to": "" },
-        { "text": "Parenting", "to": "" },
-        { "text": "Children", "to": "" },
-        { "text": "Mission Space", "to": "" },
-        { "text": "Bible Games", "to": "" }
       ]
     },
     {
       "section": "Useful Links",
       "links": [
         { "text": "Homepage", "to": "/" },
-        { "text": "About Us", "to": "" },
-        { "text": "Profile", "to": "" },
+        { "text": "Esther's Wisdom", "to": "" },
         { "text": "Contact Us", "to": "/contact" }
-      ]
-    },
-    {
-      "section": "Help & Information",
-      "links": [
-        { "text": "Help", "to": "" },
-        { "text": "FAQ's", "to": "" },
-        { "text": "Tutorials", "to": "" },
-        { "text": "Purchases", "to": "" }
       ]
     },
     {

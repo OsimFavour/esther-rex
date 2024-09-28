@@ -5,12 +5,12 @@ const FooterSocial = () => {
     return (
         <div className="col-lg-12">
             <div className="under-footer">
-                <p>{footerData[4].text}</p>
+                <p>{footerData[2].text}</p>
                 <ul>
-                    {footerData[4].socials.map((social, idx) => (
+                    {footerData[2].socials.map((social, idx) => (
                     <li key={idx}>
                         <Link to={social.to}>
-                        <i className={social.icon}></i>
+                            <i className={social.icon}></i>
                         </Link>
                     </li>
                     ))}

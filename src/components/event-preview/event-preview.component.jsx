@@ -1,5 +1,7 @@
 import './event-preview.styles.scss'
 
+import Button from "../button/button.component"
+
 const EventPreview = () => {
     return (
         <section className="section" id="explore">
@@ -41,9 +43,6 @@ const EventPreview = () => {
                                 Join the community and get first hand information sent to your inbox.
                             </p>
                             
-                            <div className="main-border-button">
-                                <a href="products.html">Discover More</a>
-                            </div>
                         </div>
                     </div>
                     <div className="col-lg-6">
@@ -67,9 +66,13 @@ const EventPreview = () => {
                                 </div>
                                 <div className="col-lg-6">
                                     <div className="text-center">
-                                        <h4>Best Selling Books</h4>
-                                        <span>Over 304 Books</span>
+                                        <h4>Register for EWA</h4>
+                                        <span>Over 304+ students</span>
                                     </div>
+                                </div>
+
+                                <div className="col-lg-6 mt-4" data-aos="zoom-out">
+                                    <Button buttonType='landing'>Register Here</Button>
                                 </div>
                             </div>
                         </div>

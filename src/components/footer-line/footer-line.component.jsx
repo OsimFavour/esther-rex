@@ -4,8 +4,8 @@ import footerData from '../../footer-data.json'
 const FooterLine = () => {
     return (
         <>
-            {footerData.slice(0, 2).map((section, index) => (
-                <div className="col-lg-6" key={index}>
+            {footerData.slice(0, 3).map((section, index) => (
+                <div className="col-lg-4" key={index}>
                     <h4>{section.section === "first-item" ? section.title : section.section}</h4>
                     <ul>
                         {section.links.map((link, idx) => (

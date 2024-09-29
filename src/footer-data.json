@@ -9,6 +9,15 @@
       ]
     },
     {
+      "section": "Categories",
+      "links": [
+        { "text": "Home", "to": "/" },
+        { "text": "Marriage", "to": "" },
+        { "text": "Ministry", "to": "" },
+        { "text": "Wealth ", "to": "" }
+      ]
+    },
+    {
       "section": "Useful Links",
       "links": [
         { "text": "Homepage", "to": "/" },

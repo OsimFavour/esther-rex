@@ -8,6 +8,7 @@ import CustomInput from '../../components/custom-input/custom-input.component'
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 import Button from '../../components/button/button.component'
 import { authenticateWithGooglePopup } from '../../utils/firebase/firebase.utils'
+import { useState } from 'react'
 
 
 const loginSchema = yup.object({
@@ -18,7 +19,11 @@ const loginSchema = yup.object({
     .required('Password is Required')
 })
 
+const defaultFormFields = {}
 const SignIn = () => {
+
+    const [formFields, setFormFields] = useState(defaultFormFields)
+
     const formik = useFormik({
         initialValues: {
             email: '',

@@ -1,17 +1,19 @@
+
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+
 import * as yup from 'yup'
 import { useFormik } from 'formik'
 
 import Button from '../../components/button/button.component'
 import CustomInput from '../../components/custom-input/custom-input.component'
 
-import AuthImg  from '../../assets/auth-image.svg' 
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 
-import { authenticateWithGooglePopup } from '../../utils/firebase/firebase.utils'
+import { authenticateWithGooglePopup, createAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 
 
 import './sign-up.styles.scss'
-import { Link } from 'react-router-dom'
 
 
 const signUpSchema = yup.object({
@@ -24,8 +26,39 @@ const signUpSchema = yup.object({
 });
 
 
+const defaultFormFields = {
+    username: "",
+    email: "",
+    password: "",
+    confirm_password: ""
+}
+
+
 const SignUp = () => {
 
+    const [formFields, setFormFields] = useState(defaultFormFields)
+
+    const { username, email, password, confirm_password } = formFields
+
+
+    const handleSubmit = async (values) => {
+        const { email, password } = values
+        try {
+            const response = await createAuthUserWithEmailAndPassword(email, password)
+            console.log(`Auth User Response: ${response}`);
+            
+        } catch (error) {
+            console.log(`Error Message: ${error}`);
+            
+        }
+
+    }
+
+    const authenticateWithGoogle = async () => {
+        const response = await authenticateWithGooglePopup()
+        console.log(response);
+        
+    }
 
     const formik = useFormik({
         initialValues: {
@@ -35,17 +68,8 @@ const SignUp = () => {
             confirm_password: ''
         },
         validationSchema: signUpSchema,
-        onSubmit: async (values) => {
-            
-        }
+        onSubmit: handleSubmit
     })
-
-
-    const authenticateWithGoogle = async () => {
-        const response = await authenticateWithGooglePopup()
-        console.log(response);
-        
-    }
 
 
     return (
@@ -67,8 +91,8 @@ const SignUp = () => {
                             name='username' 
                             placeholder='User Name'
                             value={formik.values.username}
-                            onChange={formik.handleChange('username')}
-                            onBlur={formik.handleBlur('username')}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                         />
 
                         <div className="error">
@@ -82,8 +106,8 @@ const SignUp = () => {
                             name='email' 
                             placeholder='Your Email' 
                             value={formik.values.email}
-                            onChange={formik.handleChange('email')}
-                            onBlur={formik.handleBlur('email')}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                         />
 
                         <div className="error">
@@ -98,8 +122,8 @@ const SignUp = () => {
                             name='password' 
                             placeholder='Your Password'
                             value={formik.values.password}
-                            onChange={formik.handleChange('password')}
-                            onBlur={formik.handleBlur('password')}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                         />
 
                         <div className="error">
@@ -114,8 +138,8 @@ const SignUp = () => {
                             name='confirm_password' 
                             placeholder='Confirm Password'
                             value={formik.values.confirm_password}
-                            onChange={formik.handleChange('confirm_password')}
-                            onBlur={formik.handleBlur('confirm_password')}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                         />
 
                         <div className="error">

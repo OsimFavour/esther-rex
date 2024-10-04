@@ -45,7 +45,7 @@ const Header = () => {
                             <ul className={`nav ${isMenuOpen ? 'show' : ''}`} onClick={handleLinkClick}>
                                 <li className="scroll-to-section"><Link to="/" className="active">Home</Link></li>
                                 <li className="scroll-to-section"><Link to="/blog">Blog</Link></li>
-                                <li className="scroll-to-section"><Link to="">Ministry</Link></li>
+                                <li className="scroll-to-section"><Link to="/ewa">EWA</Link></li>
                                 <li className="scroll-to-section"><Link to="/contact">Contact</Link></li>
                                 <li className="scroll-to-section"><Link to="/sign-in">Login</Link></li>
                                 

@@ -21,7 +21,7 @@
       "section": "Useful Links",
       "links": [
         { "text": "Homepage", "to": "/" },
-        { "text": "Esther's Wisdom", "to": "" },
+        { "text": "Esther's Wisdom", "to": "/ewa" },
         { "text": "Contact Us", "to": "/contact" }
       ]
     },

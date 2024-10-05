@@ -3,26 +3,16 @@ import { Link } from 'react-router-dom'
 import * as yup from 'yup'
 import { useFormik } from 'formik'
 
+import Button from '../../components/button/button.component'
 import CustomInput from '../../components/custom-input/custom-input.component'
 
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
-import Button from '../../components/button/button.component'
+
 import { authenticateWithGooglePopup } from '../../utils/firebase/firebase.utils'
-import { useState } from 'react'
 
 
-const loginSchema = yup.object({
-    email: yup.string()
-    .email('Email Should Be Valid')
-    .required('Email Address is Required'),
-    password: yup.string()
-    .required('Password is Required')
-})
-
-const defaultFormFields = {}
 const SignIn = () => {
 
-    const [formFields, setFormFields] = useState(defaultFormFields)
 
     const formik = useFormik({
         initialValues: {

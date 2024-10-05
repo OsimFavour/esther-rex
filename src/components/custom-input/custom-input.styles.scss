@@ -9,15 +9,20 @@
     border-radius: 20px;
     border: 1px solid #7a7a7a;
     box-shadow: none;
-    margin-bottom: 1rem;
+    margin-bottom: 0.2rem;
     
     &:focus {
-        border-color: #2a2a2a;
-        border-radius: 0px;
+      border-color: #2a2a2a;
+      border-radius: 20px;
     }
+}
 
-   
-    
-  }
+.input-error {
+  border-color: #fc8181;
+}
   
+// input.input-error,
+// select.input-error {
+// border-color: #fc8181;
+// }
   

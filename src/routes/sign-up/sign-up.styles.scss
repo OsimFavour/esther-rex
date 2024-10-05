@@ -1,4 +1,10 @@
 .sign-up-container {
     margin-top: 90px;
     border-bottom: 3px dotted #eee;
+
+    .error {
+        color: #ff0000;
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
 }

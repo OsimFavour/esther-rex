@@ -1,8 +1,5 @@
-
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import * as yup from 'yup'
 import { useFormik } from 'formik'
 
 import Button from '../../components/button/button.component'
@@ -11,44 +8,35 @@ import CustomInput from '../../components/custom-input/custom-input.component'
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 
 import { authenticateWithGooglePopup, createAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
-
+import { signUpSchema } from '../../utils/schemas/schema.utlis'
 
 import './sign-up.styles.scss'
 
 
-const signUpSchema = yup.object({
-    username: yup.string().required('User Name is Required'),
-    email: yup.string().email('Email Should Be Valid')
-        .required('Email Address is Required'),
-    password: yup.string().required('Password is Required'),
-    confirm_password: yup.string()
-        .oneOf([yup.ref('password'), null], 'Passwords must match')
-});
-
-
-const defaultFormFields = {
-    username: "",
-    email: "",
-    password: "",
-    confirm_password: ""
-}
-
-
 const SignUp = () => {
 
-    const [formFields, setFormFields] = useState(defaultFormFields)
 
-    const { username, email, password, confirm_password } = formFields
-
-
-    const handleSubmit = async (values) => {
+    const onSubmit = async (values, actions) => {
+        
         const { email, password } = values
+
         try {
+            console.log(`Before Auth User Response`);
             const response = await createAuthUserWithEmailAndPassword(email, password)
             console.log(`Auth User Response: ${response}`);
+            actions.resetForm()
+            
             
         } catch (error) {
-            console.log(`Error Message: ${error}`);
+            if (error.code === 'auth/network-request-failed') {
+                alert('No network connection')
+            }
+            else if (error.code === 'auth/email-already-in-use') {
+                alert('Cannot create user, email already in use')
+            }
+            else {
+                console.log('User creation encountered an error', error);
+            }
             
         }
 
@@ -68,8 +56,14 @@ const SignUp = () => {
             confirm_password: ''
         },
         validationSchema: signUpSchema,
-        onSubmit: handleSubmit
+        onSubmit
     })
+
+    console.log(formik);
+
+    console.log('Initial Value: ', formik.initialValues);
+    console.log('Current Value: ', formik.values);
+    
 
 
     return (
@@ -87,12 +81,13 @@ const SignUp = () => {
 
                     <div>
                         <CustomInput
-                            type='name' 
+                            type='text' 
                             name='username' 
                             placeholder='User Name'
                             value={formik.values.username}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
+                            className={formik.touched.username && formik.errors.username ? "input-error" : ""}
                         />
 
                         <div className="error">
@@ -108,6 +103,7 @@ const SignUp = () => {
                             value={formik.values.email}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
+                            className={formik.touched.email && formik.errors.email ? "input-error" : ""}
                         />
 
                         <div className="error">
@@ -124,6 +120,7 @@ const SignUp = () => {
                             value={formik.values.password}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
+                            className={formik.touched.password && formik.errors.password ? "input-error" : ""}
                         />
 
                         <div className="error">
@@ -140,6 +137,7 @@ const SignUp = () => {
                             value={formik.values.confirm_password}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
+                            className={formik.touched.confirm_password && formik.errors.confirm_password ? "input-error" : ""}
                         />
 
                         <div className="error">
@@ -148,7 +146,7 @@ const SignUp = () => {
                         
                     </div>
 
-                    <Button type="submit">
+                    <Button type="submit" disabled={formik.isSubmitting}>
                         <div className="button-text">Sign up</div>
                     </Button>
 

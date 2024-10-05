@@ -1,14 +1,12 @@
 import './custom-input.styles.scss'
 
-const CustomInput = ({ otherProps, placeholder }) => {
-    console.log(`Placeholder >>> ${placeholder}`);
+const CustomInput = ({ className, ...otherProps }) => {    
     
     return (
         <div {...otherProps}>
             <fieldset className='custom-form'>
-                <input className="form-input"
+                <input className={`form-input ${className}`}
                     {...otherProps}
-                    placeholder={placeholder}
                 />
             </fieldset>
             

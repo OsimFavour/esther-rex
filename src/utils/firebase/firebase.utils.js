@@ -28,9 +28,11 @@ export const authenticateWithGooglePopup = () => signInWithPopup(auth, googlePro
 export const db = getFirestore()
 
 export const createUserDocumentFromAuth = async (userAuth) => {
-
+  console.log('userAuth', userAuth)
   if (!userAuth) return;
   const userDocRef = doc(db, 'users', userAuth.uid)
+  console.log('userAuth uid', userAuth.uid)
+  console.log('userDocRef', userDocRef)
 
   const userSnapshot = await getDoc(userDocRef)
   console.log(userSnapshot);
@@ -58,5 +60,5 @@ export const createUserDocumentFromAuth = async (userAuth) => {
 
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
-  return await createUserDocumentFromAuth(auth, email, password);
+  return await createUserWithEmailAndPassword(auth, email, password);
 }

@@ -1,6 +1,6 @@
 
 import { initializeApp } from "firebase/app";
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword } from "firebase/auth"
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"
 import { doc, setDoc, getDoc, getFirestore } from "firebase/firestore"
 
 const firebaseConfig = {
@@ -27,7 +27,7 @@ export const authenticateWithGooglePopup = () => signInWithPopup(auth, googlePro
 
 export const db = getFirestore()
 
-export const createUserDocumentFromAuth = async (userAuth) => {
+export const createUserDocumentFromAuth = async (userAuth, additionalInformation={}) => {
   console.log('userAuth', userAuth)
   if (!userAuth) return;
   const userDocRef = doc(db, 'users', userAuth.uid)
@@ -46,7 +46,8 @@ export const createUserDocumentFromAuth = async (userAuth) => {
       await setDoc (userDocRef, {
         displayName,
         email,
-        createdAt
+        createdAt,
+        ...additionalInformation
       })
     } catch (error) {
 
@@ -61,4 +62,21 @@ export const createUserDocumentFromAuth = async (userAuth) => {
 export const createAuthUserWithEmailAndPassword = async (email, password) => {
   if (!email || !password) return;
   return await createUserWithEmailAndPassword(auth, email, password);
+}
+
+
+export const signInAuthUserWithEmailAndPassword = async (email, password) => {
+  if (!email || !password) return;
+
+  try {
+    return await signInWithEmailAndPassword(auth, email, password)
+  } catch (error) {
+      switch(error.code) {
+        case "auth/invalid-credential":
+            alert('Invalid Credential')
+            break
+        default:
+          console.log('Error from firebase', error)
+      }
+  }
 }

@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 
-import * as yup from 'yup'
 import { useFormik } from 'formik'
 
 import Button from '../../components/button/button.component'
@@ -8,10 +7,26 @@ import CustomInput from '../../components/custom-input/custom-input.component'
 
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 
-import { authenticateWithGooglePopup } from '../../utils/firebase/firebase.utils'
+import { authenticateWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
+import { loginSchema } from '../../utils/schemas/schema.utlis'
 
 
 const SignIn = () => {
+
+    const onSubmit = async (values, actions) => {
+        const { email, password } = values
+
+        try {
+            const response = await signInAuthUserWithEmailAndPassword(email, password)
+            if (response) {
+                alert('Success')
+            }
+            actions.resetForm()
+        } catch (error) {
+           
+            console.log(`Sign In Auth Error Message: ${error}`)
+        }
+    }
 
 
     const formik = useFormik({
@@ -20,10 +35,7 @@ const SignIn = () => {
             password: ''
         },
         validationSchema: loginSchema,
-        onSubmit: values => {
-            console.log(values);
-            
-        }
+        onSubmit
     })
 
     const authenticateWithGoogle = async () => {
@@ -54,8 +66,9 @@ const SignIn = () => {
                                 name='email' 
                                 placeholder='Your Email' 
                                 value={formik.values.email}
-                                onChange={formik.handleChange('email')}
-                                onBlur={formik.handleBlur('email')}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                className={formik.touched.email && formik.errors.email ? "input-error" : ""}
                             />
 
                             <div className="error">
@@ -70,8 +83,9 @@ const SignIn = () => {
                                 name='password' 
                                 placeholder='Your Password'
                                 value={formik.values.password}
-                                onChange={formik.handleChange('password')}
-                                onBlur={formik.handleBlur('password')}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                className={formik.touched.password && formik.errors.password ? "input-error" : ""}
                             />
 
                             <div className="error">

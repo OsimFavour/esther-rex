@@ -7,7 +7,7 @@ import CustomInput from '../../components/custom-input/custom-input.component'
 
 import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 
-import { authenticateWithGooglePopup, createAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
+import { authenticateWithGooglePopup, createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from '../../utils/firebase/firebase.utils'
 import { signUpSchema } from '../../utils/schemas/schema.utlis'
 
 import './sign-up.styles.scss'
@@ -18,12 +18,12 @@ const SignUp = () => {
 
     const onSubmit = async (values, actions) => {
         
-        const { email, password } = values
+        const { username, email, password } = values
 
         try {
-            console.log(`Before Auth User Response`);
-            const response = await createAuthUserWithEmailAndPassword(email, password)
-            console.log(`Auth User Response: ${response}`);
+            const { user } = await createAuthUserWithEmailAndPassword(email, password)
+            
+            await createUserDocumentFromAuth(user, { displayName: username })
             actions.resetForm()
             
             

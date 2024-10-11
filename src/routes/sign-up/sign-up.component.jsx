@@ -1,6 +1,7 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { useFormik } from 'formik'
+import { toast } from 'react-toastify'
 
 import Button from '../../components/button/button.component'
 import CustomInput from '../../components/custom-input/custom-input.component'
@@ -15,6 +16,7 @@ import './sign-up.styles.scss'
 
 const SignUp = () => {
 
+    const navigate = useNavigate()
 
     const onSubmit = async (values, actions) => {
         
@@ -43,8 +45,16 @@ const SignUp = () => {
     }
 
     const authenticateWithGoogle = async () => {
-        const response = await authenticateWithGooglePopup()
-        console.log(response);
+        const { userExists, user } = await authenticateWithGooglePopup()
+        
+        if (userExists) {
+            toast.info('You already have an account, please sign in.');
+            navigate('/sign-in')
+        } else {
+            await createUserDocumentFromAuth(user);
+            toast.success('Signed up successfully')
+            navigate('/')
+        }
         
     }
 

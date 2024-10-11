@@ -22,7 +22,8 @@ googleProvider.setCustomParameters({
 })
 
 export const auth = getAuth()
-export const authenticateWithGooglePopup = () => signInWithPopup(auth, googleProvider)
+
+// export const authenticateWithGooglePopup = () => signInWithPopup(auth, googleProvider)
 
 
 export const db = getFirestore()
@@ -38,6 +39,7 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
   console.log(userSnapshot.exists());
 
   if (!userSnapshot.exists()) {
+    
     const { displayName, email } = userAuth
     const createdAt = new Date()
 
@@ -52,10 +54,30 @@ export const createUserDocumentFromAuth = async (userAuth, additionalInformation
 
       console.log(`Error fetching the user: ${error.message}`); 
     }
+
   }
 
-  return userDocRef
+  return userSnapshot
   
+}
+
+export const authenticateWithGooglePopup = async () => {
+  try {
+    const { user } = await signInWithPopup(auth, googleProvider)
+
+    const userDocRef = doc(db, 'users', user.uid)
+    const userSnapshot = await getDoc(userDocRef)
+
+    if (userSnapshot.exists()) {
+      console.log('User exists, proceed to the app');
+      return { userExists: true, user}
+    } else {
+      console.log('User does not exist, trigger sign-up flow');
+      return { userExists: false, user}
+    }
+  } catch (error) {
+    console.log('Error authenticating with Google:', error);
+  }
 }
 
 export const createAuthUserWithEmailAndPassword = async (email, password) => {

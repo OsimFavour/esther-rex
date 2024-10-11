@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import { useFormik } from 'formik'
 
@@ -9,9 +9,11 @@ import { ReactComponent as GoogleIcon } from '../../assets/google-icon.svg'
 
 import { authenticateWithGooglePopup, signInAuthUserWithEmailAndPassword } from '../../utils/firebase/firebase.utils'
 import { loginSchema } from '../../utils/schemas/schema.utlis'
+import { toast } from 'react-toastify'
 
 
 const SignIn = () => {
+    const navigate = useNavigate()
 
     const onSubmit = async (values, actions) => {
         const { email, password } = values
@@ -40,7 +42,16 @@ const SignIn = () => {
 
     const authenticateWithGoogle = async () => {
         const response = await authenticateWithGooglePopup()
-        console.log(response);
+
+        if (response.userExists) {
+            // alert('Welcome back! Redirecting...')
+            toast.success('Welcome back!')
+            navigate('/')
+        } else {
+            // alert('You need to sign up first')
+            toast.info("You'll need to sign up here")
+            navigate('/sign-up')
+        }
         
     }
     return (
@@ -98,7 +109,7 @@ const SignIn = () => {
                             <Link to="/forgot-password" className='text-dark'>Forgot password?</Link>
                         </div>
 
-                        <Button type="submit">
+                        <Button type="submit" disabled={formik.isSubmitting}>
                             <div className="button-text">Sign In</div>
                         </Button>
 

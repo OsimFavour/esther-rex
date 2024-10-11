@@ -1888,3 +1888,15 @@ background: #eee;
 } */
 
 
+/* 
+---------------------------------------------
+Formik Error Validation
+--------------------------------------------- 
+*/
+
+
+.error {
+  color: #ff0000;
+  font-size: 13px;
+  margin-bottom: 1rem;
+}

@@ -25,9 +25,12 @@ export const signUpSchema = yup.object({
 
 
 export const loginSchema = yup.object({
-    email: yup.string()
-    .email('Email Should Be Valid')
-    .required('Email Address is Required'),
-    password: yup.string()
-    .required('Password is Required')
+    email: yup
+        .string()
+        .email('Email Should Be Valid')
+        .required('Email Address is Required'),
+    password: yup
+        .string()
+        .min(5)
+        .required('Password is Required')
 })

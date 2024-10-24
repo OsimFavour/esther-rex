@@ -15,9 +15,9 @@ const BookPreview = () => {
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}            
             >
-                <div class="featured__container featured__section">
+                <div className="featured__container featured__section">
 
-                    <div class="featured__swiper">
+                    <div className="featured__swiper">
                         <div className="container w-100">
                             {BOOK_DATA.map((bookData) => (
                                 <SwiperSlide>

@@ -32,7 +32,7 @@ const Header = () => {
     }
 
     return (
-        <header className="header-area header-sticky">
+        <header className="header-area header-sticky background-header">
             <div className="container">
                 <div className="row">
                     <div className="col-12">

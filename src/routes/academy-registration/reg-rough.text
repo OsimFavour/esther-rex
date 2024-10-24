@@ -1,0 +1,59 @@
+name
+phoneNumber
+email
+maritalStatus
+ageBracket
+churchMinistry
+businessName
+mentors
+majorCourses
+expectations
+intention
+additionalComment
+
+<div>
+    <label>Marital Status:</label>
+    <div className='radio-group'>
+        {['Single', 'Married', 'Divorced', 'Widow'].map((status) => (
+            <label key={status}>
+                <CustomInput 
+                    type='radio'
+                    name='maritalStatus' 
+                    value={status}
+                    onChange={formik.handleChange}
+                    onBlur={formik.handleBlur}
+                    checked={formik.values.maritalStatus === status} 
+                    className={formik.touched.maritalStatus && formik.errors.maritalStatus ? "input-error" : ""}  
+                />
+            </label>
+        ))}
+    </div>
+
+    <div className='error'>
+        {formik.touched.maritalStatus && formik.errors.maritalStatus}
+    </div>
+</div>
+
+
+ <div className="form-group">
+        <label>Marital Status:</label>
+        <div className="radio-group">
+          {['Single', 'Married', 'Divorced', 'Widow'].map((status) => (
+            <label key={status}>
+              <input
+                type="radio"
+                name="maritalStatus"
+                value={status}
+                onChange={formik.handleChange}
+                onBlur={formik.handleBlur}
+                checked={formik.values.maritalStatus === status}
+                
+            />
+              {status}
+            </label>
+          ))}
+        </div>
+        {formik.touched.maritalStatus && formik.errors.maritalStatus ? (
+          <div className="error">{formik.errors.maritalStatus}</div>
+        ) : null}
+      </div>

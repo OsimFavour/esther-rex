@@ -44,11 +44,9 @@ const SignIn = () => {
         const response = await authenticateWithGooglePopup()
 
         if (response.userExists) {
-            // alert('Welcome back! Redirecting...')
             toast.success('Welcome back!')
             navigate('/')
         } else {
-            // alert('You need to sign up first')
             toast.info("You'll need to sign up here")
             navigate('/sign-up')
         }
@@ -59,10 +57,7 @@ const SignIn = () => {
         <div className='sign-in-container'>
             <div className="container py-5 mt-5">
                 <div className="row d-flex align-items-center justify-content-center mt-5">
-                {/* <div className="col-md-8 col-lg-7 col-xl-6">
-                    <img src={AuthImage}
-                    className="img-fluid" alt="AuthImg"/>
-                </div> */}
+                
                 <div className="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
 
                     <div className='pb-3 text-center'>Welcome! please enter your details.</div>
